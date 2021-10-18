@@ -22,7 +22,7 @@ class Header extends PureComponent {
                         <Box w="100%">
                             <InputGroup className="search-group">
                                 <Input type="tel" placeholder="phone number" />
-                                <IconButton aria-label="Search database" icon={<SearchIcon />} />
+                                {/*<IconButton aria-label="Search database" icon={<SearchIcon />} />*/}
                             </InputGroup>
                         </Box>
                         <Box w="100%" />
