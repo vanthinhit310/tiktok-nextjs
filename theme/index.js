@@ -33,6 +33,11 @@ const theme = extendTheme({
     config,
     components: {
         Container
+    },
+    fonts: {
+        body: "Montserrat, sans-serif",
+        heading: "Montserrat, sans-serif",
+        mono: "Montserrat, sans-serif"
     }
 });
 
