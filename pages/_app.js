@@ -1,7 +1,7 @@
 import "../styles/app.scss";
 import { ChakraProvider } from "@chakra-ui/react";
 import { ColorModeScript } from "@chakra-ui/react";
-import theme from "../utils/theme";
+import theme from "../theme/index";
 
 function MyApp({ Component, pageProps }) {
     return (

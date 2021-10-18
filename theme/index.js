@@ -13,6 +13,12 @@ const config = {
     useSystemColorMode: false
 };
 
+const Container = {
+    baseStyle: {
+        maxW: "1100px"
+    }
+};
+
 const colors = {
     brand: {
         900: "#1a365d",
@@ -21,6 +27,13 @@ const colors = {
     }
 };
 
-const theme = extendTheme({ breakpoints, colors, config });
+const theme = extendTheme({
+    breakpoints,
+    colors,
+    config,
+    components: {
+        Container
+    }
+});
 
 export default theme;
