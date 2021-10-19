@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import Head from "next/head";
 import DefaultLayout from "../components/layouts/DefaultLayout";
+import Sidebar from "../components/home/Sidebar";
 
 class Home extends PureComponent {
     constructor(props) {
@@ -13,14 +14,17 @@ class Home extends PureComponent {
     render() {
         return (
             <DefaultLayout>
+                <Head>
+                    <meta charSet="UTF-8" />
+                    <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <title>Tiktok - NextJS</title>
+                    <link rel="icon" href="/favicon.ico" />
+                </Head>
                 <div className="page-content home-wrapper">
-                    <Head>
-                        <meta charSet="UTF-8" />
-                        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                        <title>Tiktok - NextJS</title>
-                        <link rel="icon" href="/favicon.ico" />
-                    </Head>
+                    <div className="content-left">
+                        <Sidebar />
+                    </div>
                 </div>
             </DefaultLayout>
         );
