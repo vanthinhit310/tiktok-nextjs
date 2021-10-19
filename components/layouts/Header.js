@@ -23,6 +23,8 @@ import {
 import { Icon, SearchIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { MdLanguage } from "react-icons/md";
+import { RiQuestionLine } from "react-icons/ri";
 
 class Header extends PureComponent {
     render() {
@@ -61,11 +63,11 @@ class Header extends PureComponent {
                                         <Icon as={BsThreeDotsVertical} />
                                     </MenuButton>
                                     <MenuList>
-                                        <MenuItem>
-                                            <strong>English</strong>
+                                        <MenuItem icon={<MdLanguage className="menu-icon" />} iconSpacing="1">
+                                            English
                                         </MenuItem>
-                                        <MenuItem>
-                                            <strong>Feedback and help</strong>
+                                        <MenuItem iconSpacing="1" icon={<RiQuestionLine className="menu-icon" />}>
+                                            Feedback and help
                                         </MenuItem>
                                     </MenuList>
                                 </Menu>

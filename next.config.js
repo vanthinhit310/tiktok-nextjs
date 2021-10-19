@@ -9,7 +9,7 @@ module.exports = {
     typescript: {
         ignoreBuildErrors: true
     },
-    compress: true,
+    compress: false,
     sassOptions: {
         includePaths: [path.join(__dirname, "styles")]
     },
