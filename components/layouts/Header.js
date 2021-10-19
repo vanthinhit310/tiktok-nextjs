@@ -44,6 +44,7 @@ class Header extends PureComponent {
                         <Box w="100%">
                             <InputGroup className="search-group">
                                 <Input variant="no-border" className="search-input" type="tel" placeholder="search accounts and videos" />
+                                <span className="border"></span>
                                 <IconButton className="search-button" aria-label="Search database" icon={<SearchIcon />} />
                             </InputGroup>
                         </Box>

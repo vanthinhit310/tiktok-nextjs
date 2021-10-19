@@ -3,4 +3,34 @@
     align-items: center;
     height: 65px;
     border-bottom: solid 1px $--border;
+
+    .search-group {
+        background-color: $--gray--bg;
+        border-radius: 20px;
+        .search-input {
+            font-weight: 400;
+            background-color: $--gray--bg;
+            border-radius: 20px 0 0 20px;
+        }
+        span.border {
+            display: block;
+            position: relative;
+            &:after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 1px;
+                height: 20px;
+                background-color: $--border--gray;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+        .search-button {
+            background-color: $--gray--bg;
+            border-radius: 0 20px 20px 0;
+            color: $--black--text;
+        }
+    }
 }
