@@ -44,7 +44,7 @@ class Header extends PureComponent {
                         <Box w="100%">
                             <InputGroup className="search-group">
                                 <Input type="tel" placeholder="search accounts and videos" />
-                                <IconButton aria-label="Search database" icon={<SearchIcon />} />
+                                <IconButton variant="pink-outline" aria-label="Search database" icon={<SearchIcon />} />
                             </InputGroup>
                         </Box>
                         <Box w="100%">
@@ -60,8 +60,12 @@ class Header extends PureComponent {
                                         <Icon as={BsThreeDotsVertical} />
                                     </MenuButton>
                                     <MenuList>
-                                        <MenuItem>English</MenuItem>
-                                        <MenuItem>Feedback and help</MenuItem>
+                                        <MenuItem>
+                                            <strong>English</strong>
+                                        </MenuItem>
+                                        <MenuItem>
+                                            <strong>Feedback and help</strong>
+                                        </MenuItem>
                                     </MenuList>
                                 </Menu>
                             </Flex>

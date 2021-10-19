@@ -6,9 +6,13 @@ const Button = {
         }
     },
     sizes: {
+        lg: {
+            fontSize: "1rem",
+            px: "20px"
+        },
         md: {
             fontSize: "0.875rem",
-            px: "20px"
+            px: "15px"
         },
         sm: {
             fontSize: "0.75rem",
@@ -31,10 +35,20 @@ const Button = {
             outline: "none",
             color: "#161823"
         },
+        "pink-outline": {
+            bg: "#fff",
+            boxShadow: "none",
+            outline: "none",
+            border: "solid 2px #fe2c55",
+            color: "#fe2c55"
+        },
         solid: props => ({
             bg: props.colorMode === "dark" ? "#fe2c55" : "#fe2c55",
             color: "#fff"
         })
+    },
+    defaultProps: {
+        size: "md"
     }
 };
 export default Button;
