@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
+import Button from "./components/Button";
 
 const breakpoints = createBreakpoints({
     sm: "320px",
@@ -32,7 +33,8 @@ const theme = extendTheme({
     colors,
     config,
     components: {
-        Container
+        Container,
+        Button
     },
     fonts: {
         body: "Montserrat, sans-serif",

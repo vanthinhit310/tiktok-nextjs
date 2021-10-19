@@ -1,2 +1,9 @@
 button {
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.button {
+    font-size: 14px;
 }

@@ -1,30 +1,30 @@
 {
-  "name": "tiktok-nextjs",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@chakra-ui/gatsby-plugin": "^2.0.1",
-    "@chakra-ui/icons": "^1.0.16",
-    "@chakra-ui/react": "^1.6.10",
-    "@chakra-ui/theme-tools": "^1.2.2",
-    "@emotion/react": "^11",
-    "@emotion/styled": "^11",
-    "framer-motion": "^4",
-    "next": "11.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "sass": "^1.43.2"
-  },
-  "devDependencies": {
-    "eslint": "8.0.1",
-    "eslint-config-next": "11.1.2",
-    "prettier": "2.4.1"
-  }
+    "name": "tiktok-nextjs",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev -p 3010",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@chakra-ui/gatsby-plugin": "^2.0.1",
+        "@chakra-ui/icons": "^1.0.16",
+        "@chakra-ui/react": "^1.6.10",
+        "@chakra-ui/theme-tools": "^1.2.2",
+        "@emotion/react": "^11",
+        "@emotion/styled": "^11",
+        "framer-motion": "^4",
+        "next": "11.1.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-icons": "^4.3.1",
+        "sass": "^1.43.2"
+    },
+    "devDependencies": {
+        "eslint": "8.0.1",
+        "eslint-config-next": "11.1.2",
+        "prettier": "2.4.1"
+    }
 }

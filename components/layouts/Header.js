@@ -43,21 +43,25 @@ class Header extends PureComponent {
                         </Box>
                         <Box w="100%">
                             <InputGroup className="search-group">
-                                <Input type="tel" placeholder="phone number" />
+                                <Input type="tel" placeholder="search accounts and videos" />
                                 <IconButton aria-label="Search database" icon={<SearchIcon />} />
                             </InputGroup>
                         </Box>
                         <Box w="100%">
                             <Flex justify="end">
-                                <Button mr={2}>Upload</Button>
-                                <Button mr={2}>Log in</Button>
-                                <Menu id="header-menu" placement="bottom-end">
-                                    <MenuButton as={Button}>
+                                <Button variant="white-button" className="button">
+                                    Upload
+                                </Button>
+                                <Button variant="pink-button" className="button">
+                                    Log in
+                                </Button>
+                                <Menu isLazy placement="bottom-end" id="1">
+                                    <MenuButton variant="white-button" as={Button}>
                                         <Icon as={BsThreeDotsVertical} />
                                     </MenuButton>
                                     <MenuList>
-                                        <MenuItem id="header-menu-item">English</MenuItem>
-                                        <MenuItem id="header-menu-item">Feedback and help</MenuItem>
+                                        <MenuItem>English</MenuItem>
+                                        <MenuItem>Feedback and help</MenuItem>
                                     </MenuList>
                                 </Menu>
                             </Flex>
