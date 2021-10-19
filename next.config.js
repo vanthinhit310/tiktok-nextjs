@@ -2,7 +2,10 @@ const path = require("path");
 
 module.exports = {
     reactStrictMode: true,
-    eslint: {},
+    eslint: {
+        ignoreDuringBuilds: true
+    },
+    generateEtags: false,
     typescript: {
         ignoreBuildErrors: true
     },

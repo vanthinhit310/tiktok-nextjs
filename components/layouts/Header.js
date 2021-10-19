@@ -1,5 +1,25 @@
 import React, { PureComponent } from "react";
-import { Grid, Box, Container, Image, Input, InputGroup, IconButton, Flex, Heading, Spacer, Button } from "@chakra-ui/react";
+import {
+    Grid,
+    Box,
+    Container,
+    Image,
+    Input,
+    InputGroup,
+    IconButton,
+    Flex,
+    Button,
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+    MenuItemOption,
+    MenuGroup,
+    MenuOptionGroup,
+    MenuIcon,
+    MenuCommand,
+    MenuDivider
+} from "@chakra-ui/react";
 import { Icon, SearchIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -28,14 +48,18 @@ class Header extends PureComponent {
                             </InputGroup>
                         </Box>
                         <Box w="100%">
-                            <Flex>
-                                <Button>Upload</Button>
-                                <Box>
-                                    <Button mr="4">Log in</Button>
-                                    <Button>
+                            <Flex justify="end">
+                                <Button mr={2}>Upload</Button>
+                                <Button mr={2}>Log in</Button>
+                                <Menu id="header-menu" placement="bottom-end">
+                                    <MenuButton as={Button}>
                                         <Icon as={BsThreeDotsVertical} />
-                                    </Button>
-                                </Box>
+                                    </MenuButton>
+                                    <MenuList>
+                                        <MenuItem id="header-menu-item">English</MenuItem>
+                                        <MenuItem id="header-menu-item">Feedback and help</MenuItem>
+                                    </MenuList>
+                                </Menu>
                             </Flex>
                         </Box>
                     </Grid>
