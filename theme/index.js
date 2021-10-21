@@ -16,6 +16,12 @@ const config = {
     useSystemColorMode: false
 };
 
+const fontWeights = {
+    normal: 500,
+    medium: 600,
+    bold: 700
+};
+
 const Container = {
     baseStyle: {
         maxW: "1100px"
@@ -33,6 +39,7 @@ const colors = {
 const theme = extendTheme({
     breakpoints,
     colors,
+    fontWeights,
     config,
     components: {
         Container,

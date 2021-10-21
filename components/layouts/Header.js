@@ -25,6 +25,7 @@ import Link from "next/link";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { MdLanguage } from "react-icons/md";
 import { RiQuestionLine } from "react-icons/ri";
+import DarkModeSwitch from "../Utils/DarkModeSwitch";
 
 class Header extends PureComponent {
     render() {
@@ -71,6 +72,7 @@ class Header extends PureComponent {
                                         </MenuItem>
                                     </MenuList>
                                 </Menu>
+                                <DarkModeSwitch />
                             </Flex>
                         </Box>
                     </Grid>
