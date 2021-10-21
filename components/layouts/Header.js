@@ -1,25 +1,5 @@
 import React, { PureComponent } from "react";
-import {
-    Grid,
-    Box,
-    Container,
-    Image,
-    Input,
-    InputGroup,
-    IconButton,
-    Flex,
-    Button,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuItemOption,
-    MenuGroup,
-    MenuOptionGroup,
-    MenuIcon,
-    MenuCommand,
-    MenuDivider
-} from "@chakra-ui/react";
+import { Grid, Box, Container, Image, Input, InputGroup, IconButton, Flex, Button, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { Icon, SearchIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -48,7 +28,7 @@ class Header extends PureComponent {
                             <InputGroup className="search-group">
                                 <Input variant="no-border" className="search-input" type="tel" placeholder="search accounts and videos" />
                                 <span className="border"></span>
-                                <IconButton className="search-button" aria-label="Search database" icon={<SearchIcon />} />
+                                <IconButton className="search-button" variant="gray-button" aria-label="Search database" icon={<SearchIcon />} />
                             </InputGroup>
                         </Box>
                         <Box w="100%">

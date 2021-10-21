@@ -33,11 +33,14 @@ const Input = {
     },
     // Styles for the visual style variations
     variants: {
-        "no-border": {
+        "no-border": props => ({
             field: {
-                boxShadow: "none"
+                boxShadow: "none",
+                bg: props.colorMode === "dark" ? "#2D3748" : "rgba(22, 24, 35, 0.06)",
+                outline: "none",
+                color: props.colorMode === "dark" ? "#fff" : "#161823"
             }
-        }
+        })
     },
     // The default `size` or `variant` values
     defaultProps: {
