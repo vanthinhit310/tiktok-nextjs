@@ -36,7 +36,7 @@ function Sidebar() {
                 </Box>
                 <Divider />
                 <Box py="20px" w="100%">
-                    <Flex>
+                    <Flex pb="15px">
                         <Box>
                             <Text fontWeight="semibold" fontSize="xs">
                                 Suggested accounts
@@ -53,9 +53,9 @@ function Sidebar() {
                         {[0, 1, 2, 3, 4, 5].map(i => (
                             <ListItem key={i}>
                                 <Link>
-                                    <HStack spacing="7px">
+                                    <HStack spacing="10px">
                                         <Box w="40px">
-                                            <Avatar size="45px" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+                                            <Avatar size="40px" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
                                         </Box>
                                         <Box>
                                             <Text fontSize="sm" className="account__name" fontWeight="bold">
@@ -73,7 +73,7 @@ function Sidebar() {
                 </Box>
                 <Divider />
                 <Box py="20px" w="100%">
-                    <Text fontWeight="semibold" fontSize="xs">
+                    <Text pb="15px" fontWeight="semibold" fontSize="xs">
                         Discover
                     </Text>
                     <Wrap>
@@ -89,57 +89,57 @@ function Sidebar() {
                     </Wrap>
                 </Box>
                 <Divider />
-                <Box w="100%" py="20px" className="sidebar-button">
+                <Box w="100%" pt="20px" className="sidebar-button">
                     <Wrap>
                         <WrapItem>
-                            <Link>About</Link>
+                            <Link variant="footer-menu">About</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Newsroom</Link>
+                            <Link variant="footer-menu">Newsroom</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Contact</Link>
+                            <Link variant="footer-menu">Contact</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Careers</Link>
+                            <Link variant="footer-menu">Careers</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>ByteDance</Link>
+                            <Link variant="footer-menu">ByteDance</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>TikTok for Good</Link>
+                            <Link variant="footer-menu">TikTok for Good</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Advertise</Link>
+                            <Link variant="footer-menu">Advertise</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Developers</Link>
+                            <Link variant="footer-menu">Developers</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Transparency</Link>
+                            <Link variant="footer-menu">Transparency</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Help</Link>
+                            <Link variant="footer-menu">Help</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Safety</Link>
+                            <Link variant="footer-menu">Safety</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Terms</Link>
+                            <Link variant="footer-menu">Terms</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Privacy</Link>
+                            <Link variant="footer-menu">Privacy</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Creator Portal</Link>
+                            <Link variant="footer-menu">Creator Portal</Link>
                         </WrapItem>
                         <WrapItem>
-                            <Link>Community Guidelines</Link>
+                            <Link variant="footer-menu">Community Guidelines</Link>
                         </WrapItem>
                     </Wrap>
                 </Box>
-                <Box w="100%" className="copyright">
-                    <Text>© 2021 TikTok</Text>
+                <Box w="100%" p="10px 0 20px" className="copyright">
+                    <Text fontSize="10px">© 2021 TikTok</Text>
                 </Box>
             </div>
         </section>

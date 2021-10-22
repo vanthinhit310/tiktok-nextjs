@@ -20,7 +20,10 @@ const Link = {
             _hover: {
                 background: props.colorMode === "dark" ? "#2D3748" : "rgba(22, 24, 35, 0.03)"
             }
-        })
+        }),
+        "footer-menu": {
+            fontSize: "10px"
+        }
     },
     // default values for `size` and `variant`
     defaultProps: {
