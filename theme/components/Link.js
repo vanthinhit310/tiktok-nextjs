@@ -12,7 +12,15 @@ const Link = {
         "pink-link": {
             color: "#fe2c55",
             fontWeight: 500
-        }
+        },
+        "main-sidebar": props => ({
+            padding: "12px",
+            display: "flex",
+            borderRadius: "4px",
+            _hover: {
+                background: props.colorMode === "dark" ? "#2D3748" : "rgba(22, 24, 35, 0.03)"
+            }
+        })
     },
     // default values for `size` and `variant`
     defaultProps: {

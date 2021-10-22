@@ -4,19 +4,5 @@
     .sidebar-content {
         position: relative;
         width: 100%;
-
-        .sidebar-item-hover {
-            padding: 8px;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            a {
-                display: flex;
-                align-items: center;
-                span {
-                    display: block;
-                }
-            }
-        }
     }
 }
