@@ -1,9 +1,21 @@
+import { useState } from "react";
 import { Box, List, ListItem, Icon, Text, Button, Link, Flex, Spacer, Avatar, HStack, Wrap, WrapItem, Tag, Divider, TagLeftIcon } from "@chakra-ui/react";
 import { AiFillHome, AiFillCheckCircle } from "react-icons/ai";
 import { FiUsers, FiHash } from "react-icons/fi";
 import NextLink from "next/link";
+import SuggestedAccount from "./SuggestedAccount";
 
 function Sidebar() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openSuggestedModal = () => {
+        setIsOpen(true);
+    };
+
+    const closeSuggestedModal = () => {
+        setIsOpen(false);
+    };
+
     return (
         <section className="sidebar">
             <div className="sidebar-content">
@@ -44,9 +56,10 @@ function Sidebar() {
                         </Box>
                         <Spacer />
                         <Box>
-                            <Link fontWeight="semibold" variant="pink-link" fontSize="xs">
+                            <Link onClick={openSuggestedModal} fontWeight="semibold" variant="pink-link" fontSize="xs">
                                 See all
                             </Link>
+                            <SuggestedAccount isOpen={isOpen} onClose={closeSuggestedModal} />
                         </Box>
                     </Flex>
                     <List spacing={0}>
@@ -62,9 +75,12 @@ function Sidebar() {
                                             />
                                         </Box>
                                         <Box>
-                                            <Text fontSize="sm" className="account__name" fontWeight="semibold">
-                                                yeah1.trending <Icon as={AiFillCheckCircle} w={4} h={4} color="green.300" />
-                                            </Text>
+                                            <HStack spacing={2}>
+                                                <Text fontSize="sm" className="account__name" fontWeight="semibold">
+                                                    yeah1.trending
+                                                </Text>
+                                                <Icon as={AiFillCheckCircle} w={5} h={5} color="green.300" />
+                                            </HStack>
                                             <Text fontSize="2xs">Yeah1 Trending</Text>
                                         </Box>
                                     </HStack>

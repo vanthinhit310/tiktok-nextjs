@@ -5,6 +5,7 @@ import Input from "./components/Input";
 import Menu from "./components/Menu";
 import Link from "./components/Link";
 import Tag from "./components/Tag";
+import Modal from "./components/Modal";
 
 const breakpoints = createBreakpoints({
     sm: "320px",
@@ -19,7 +20,7 @@ const config = {
 };
 
 const fontWeights = {
-    normal: 400,
+    normal: 500,
     medium: 600,
     bold: 700
 };
@@ -58,6 +59,16 @@ const styles = {
     global: {
         "html, body": {
             fontSize: "md"
+        },
+        "&::-webkit-scrollbar": {
+            width: "8px",
+            borderRadius: "8px",
+            backgroundColor: `rgba(0, 0, 0, 0)`
+        },
+        "&::-webkit-scrollbar-thumb": {
+            backgroundColor: `rgba(0, 0, 0, 0.15)`,
+            width: "8px",
+            borderRadius: "8px"
         }
     }
 };
@@ -76,7 +87,8 @@ const theme = extendTheme({
         Input,
         Menu,
         Link,
-        Tag
+        Tag,
+        Modal
     }
 });
 

@@ -42,10 +42,10 @@ const Button = {
             color: props.colorMode === "dark" ? "#fff" : "#161823"
         }),
         "pink-outline": props => ({
-            bg: props.colorMode === "dark" ? "gray.900" : "#fff",
+            bg: props.colorMode === "dark" ? "transparent" : "#fff",
             boxShadow: "none",
             outline: "none",
-            border: "solid 2px #fe2c55",
+            border: "solid 1px #fe2c55",
             color: "#fe2c55"
         }),
         solid: props => ({

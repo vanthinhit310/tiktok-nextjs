@@ -18,15 +18,15 @@ const Link = {
             display: "flex",
             borderRadius: "4px",
             _hover: {
-                background: props.colorMode === "dark" ? "#2D3748" : "rgba(22, 24, 35, 0.03)"
+                background: props.colorMode === "dark" ? "#2D3748" : "rgba(22, 24, 35, 0.04)"
             }
         }),
         "account-badge": props => ({
             padding: "8px 12px",
             display: "flex",
-            borderRadius: "4px",
+            borderRadius: "6px",
             _hover: {
-                background: props.colorMode === "dark" ? "#2D3748" : "rgba(22, 24, 35, 0.03)"
+                background: props.colorMode === "dark" ? "#2D3748" : "rgba(22, 24, 35, 0.04)"
             }
         }),
         "footer-menu": {
