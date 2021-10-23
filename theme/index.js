@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import Input from "./components/Input";
 import Menu from "./components/Menu";
 import Link from "./components/Link";
+import Tag from "./components/Tag";
 
 const breakpoints = createBreakpoints({
     sm: "320px",
@@ -30,6 +31,8 @@ const Container = {
 };
 
 const fontSizes = {
+    "1xs": "8px",
+    "2xs": "10px",
     xs: "0.75rem",
     sm: "0.875rem",
     md: "1rem",
@@ -45,19 +48,23 @@ const colors = {
     }
 };
 
-const theme = extendTheme({
-    styles: {
-        global: {
-            "html, body": {
-                fontSize: "md"
-            }
+const fonts = {
+    body: "Montserrat, sans-serif",
+    heading: "Montserrat, sans-serif",
+    mono: "Montserrat, sans-serif"
+};
+
+const styles = {
+    global: {
+        "html, body": {
+            fontSize: "md"
         }
-    },
-    fonts: {
-        body: "Montserrat, sans-serif",
-        heading: "Montserrat, sans-serif",
-        mono: "Montserrat, sans-serif"
-    },
+    }
+};
+
+const theme = extendTheme({
+    styles,
+    fonts,
     breakpoints,
     colors,
     fontSizes,
@@ -68,7 +75,8 @@ const theme = extendTheme({
         Button,
         Input,
         Menu,
-        Link
+        Link,
+        Tag
     }
 });
 

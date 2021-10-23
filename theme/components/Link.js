@@ -21,6 +21,14 @@ const Link = {
                 background: props.colorMode === "dark" ? "#2D3748" : "rgba(22, 24, 35, 0.03)"
             }
         }),
+        "account-badge": props => ({
+            padding: "8px 12px",
+            display: "flex",
+            borderRadius: "4px",
+            _hover: {
+                background: props.colorMode === "dark" ? "#2D3748" : "rgba(22, 24, 35, 0.03)"
+            }
+        }),
         "footer-menu": {
             fontSize: "10px"
         }

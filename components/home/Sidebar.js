@@ -1,6 +1,6 @@
-import { Box, List, ListItem, Icon, Text, Button, Link, Flex, Spacer, Avatar, HStack, Wrap, WrapItem, Tag, Divider } from "@chakra-ui/react";
-import { AiFillHome } from "react-icons/ai";
-import { FiUsers } from "react-icons/fi";
+import { Box, List, ListItem, Icon, Text, Button, Link, Flex, Spacer, Avatar, HStack, Wrap, WrapItem, Tag, Divider, TagLeftIcon } from "@chakra-ui/react";
+import { AiFillHome, AiFillCheckCircle } from "react-icons/ai";
+import { FiUsers, FiHash } from "react-icons/fi";
 import NextLink from "next/link";
 
 function Sidebar() {
@@ -52,18 +52,20 @@ function Sidebar() {
                     <List spacing={0}>
                         {[0, 1, 2, 3, 4, 5].map(i => (
                             <ListItem key={i}>
-                                <Link>
+                                <Link variant="account-badge">
                                     <HStack spacing="10px">
                                         <Box w="40px">
-                                            <Avatar size="40px" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+                                            <Avatar
+                                                size="40px"
+                                                name="Dan Abrahmov"
+                                                src="https://p9-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/ace3ef6a9607c43e027a7159dfbfd564.jpeg?x-expires=1635048000&x-signature=aeA0wM7UL52%2FOSJct%2Bkfqe%2FUsaE%3D"
+                                            />
                                         </Box>
                                         <Box>
-                                            <Text fontSize="sm" className="account__name" fontWeight="bold">
-                                                beatvn__offical
+                                            <Text fontSize="sm" className="account__name" fontWeight="semibold">
+                                                yeah1.trending <Icon as={AiFillCheckCircle} w={4} h={4} color="green.300" />
                                             </Text>
-                                            <Text fontSize="xs" textTransform="uppercase">
-                                                BEATVN
-                                            </Text>
+                                            <Text fontSize="2xs">Yeah1 Trending</Text>
                                         </Box>
                                     </HStack>
                                 </Link>
@@ -80,8 +82,9 @@ function Sidebar() {
                         {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(i => (
                             <WrapItem key={i}>
                                 <Link>
-                                    <Tag fontSize="xs" fontWeight="normal">
-                                        #danhbayvirus
+                                    <Tag variant="pills" fontSize="xs" fontWeight="normal">
+                                        <TagLeftIcon boxSize="12px" as={FiHash} />
+                                        danhbayvirus
                                     </Tag>
                                 </Link>
                             </WrapItem>
