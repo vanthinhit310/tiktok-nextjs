@@ -24,7 +24,7 @@ class Home extends PureComponent {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <div className="page-content home-wrapper">
-                    <Stack direction={{ base: "column", lg: "row" }} spacing="30px">
+                    <Stack direction={{ base: "column", lg: "row" }} spacing="40px">
                         <Box w="100%" flex={{ base: "1", lg: "0 0 324px" }}>
                             <Sidebar />
                         </Box>
