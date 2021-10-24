@@ -39,11 +39,7 @@ function SuggestedAccount({ isOpen, onClose }) {
                                             <Box w="100%">
                                                 <HStack>
                                                     <Box w="40px">
-                                                        <Avatar
-                                                            size="40px"
-                                                            name="vtv24news"
-                                                            src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/91763c5ab86613069e25b4a14de6dd67.jpeg?x-expires=1635055200&x-signature=7qs7WtWU48wDHkCiK6sbQilU9nY%3D"
-                                                        />
+                                                        <Avatar size="40px" name="vtv24news" src="https://bit.ly/sage-adebayo" />
                                                     </Box>
                                                     <Box w="100%">
                                                         <Box w="100%">

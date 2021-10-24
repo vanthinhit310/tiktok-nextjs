@@ -68,11 +68,7 @@ function Sidebar() {
                                 <Link variant="account-badge">
                                     <HStack spacing="10px">
                                         <Box w="40px">
-                                            <Avatar
-                                                size="40px"
-                                                name="Dan Abrahmov"
-                                                src="https://p9-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/ace3ef6a9607c43e027a7159dfbfd564.jpeg?x-expires=1635048000&x-signature=aeA0wM7UL52%2FOSJct%2Bkfqe%2FUsaE%3D"
-                                            />
+                                            <Avatar size="40px" name="Dan Abrahmov" src="https://bit.ly/ryan-florence" />
                                         </Box>
                                         <Box>
                                             <HStack spacing={2}>
