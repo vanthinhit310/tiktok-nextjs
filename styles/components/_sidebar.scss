@@ -1,12 +1,16 @@
 .sidebar {
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 100%;
-    padding-right: 10px;
+    position: relative;
 
     .sidebar-content {
-        position: relative;
-        width: 100%;
+        position: fixed;
+        top: 65px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        overscroll-behavior-y: contain;
+        width: 340px;
+        z-index: 1802;
+        bottom: 0;
+        padding-right: 10px;
     }
 }

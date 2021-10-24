@@ -58,10 +58,7 @@ const fonts = {
 const styles = {
     global: props => ({
         "html, body": {
-            fontSize: "md",
-            overflow: "hidden",
-            width: "100vw",
-            height: "100vh"
+            fontSize: "md"
         },
         "&::-webkit-scrollbar": {
             width: "8px",

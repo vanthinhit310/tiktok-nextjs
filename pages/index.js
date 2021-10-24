@@ -3,6 +3,7 @@ import Head from "next/head";
 import DefaultLayout from "../components/layouts/DefaultLayout";
 import Sidebar from "../components/home/Sidebar";
 import { Stack, Flex, Box } from "@chakra-ui/react";
+import FeedList from "../components/home/FeedList";
 
 class Home extends PureComponent {
     constructor(props) {
@@ -22,13 +23,14 @@ class Home extends PureComponent {
                     <title>Tiktok - NextJS</title>
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
-                <div className="page-content home-wrapper h100">
-                    <Stack className="h100" direction={{ base: "column", lg: "row" }} spacing="24px">
-                        <Box w="100%" flex={{ base: "1", lg: "0 324px" }} overflow="hidden">
+                <div className="page-content home-wrapper">
+                    <Stack direction={{ base: "column", lg: "row" }} spacing="30px">
+                        <Box w="100%" flex={{ base: "1", lg: "0 0 324px" }}>
                             <Sidebar />
                         </Box>
-
-                        <Box w="100%" flex="1" overflow="hidden"></Box>
+                        <Box w="100%" flex="1 1 auto">
+                            <FeedList />
+                        </Box>
                     </Stack>
                 </div>
             </DefaultLayout>
