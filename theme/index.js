@@ -56,9 +56,12 @@ const fonts = {
 };
 
 const styles = {
-    global: {
+    global: props => ({
         "html, body": {
-            fontSize: "md"
+            fontSize: "md",
+            overflow: "hidden",
+            width: "100vw",
+            height: "100vh"
         },
         "&::-webkit-scrollbar": {
             width: "8px",
@@ -69,8 +72,11 @@ const styles = {
             backgroundColor: `rgba(0, 0, 0, 0.15)`,
             width: "8px",
             borderRadius: "8px"
+        },
+        ".header-wrapper": {
+            background: props.colorMode === "dark" ? "#1a202c" : "#fff"
         }
-    }
+    })
 };
 
 const theme = extendTheme({

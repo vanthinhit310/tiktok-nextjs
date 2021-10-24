@@ -22,8 +22,8 @@ class Home extends PureComponent {
                     <title>Tiktok - NextJS</title>
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
-                <div className="page-content home-wrapper">
-                    <Stack direction={{ base: "column", lg: "row" }} spacing="24px">
+                <div className="page-content home-wrapper h100">
+                    <Stack className="h100" direction={{ base: "column", lg: "row" }} spacing="24px">
                         <Box w="100%" flex={{ base: "1", lg: "0 324px" }} overflow="hidden">
                             <Sidebar />
                         </Box>

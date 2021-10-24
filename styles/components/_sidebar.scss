@@ -1,5 +1,9 @@
 .sidebar {
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    padding-right: 10px;
 
     .sidebar-content {
         position: relative;
