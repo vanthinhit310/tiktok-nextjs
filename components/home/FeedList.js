@@ -1,5 +1,7 @@
-import { VStack, StackDivider, Box, HStack, Flex, Avatar } from "@chakra-ui/react";
+import { VStack, StackDivider, Box, HStack, Flex, Avatar, Text, Icon, Button } from "@chakra-ui/react";
 import _ from "lodash";
+import { AiFillCheckCircle } from "react-icons/ai";
+import { BsMusicNoteBeamed } from "react-icons/bs";
 
 const FeedList = () => {
     return (
@@ -13,8 +15,40 @@ const FeedList = () => {
                             </Box>
                             <Box w="100%">
                                 <VStack>
-                                    <Box></Box>
-                                    <Box className="feed__item__video"></Box>
+                                    <Box w="100%">
+                                        <Flex>
+                                            <Box>
+                                                <VStack alignItems="flex-start">
+                                                    <Box>
+                                                        <HStack spacing={2}>
+                                                            <Text fontSize="sm" fontWeight="semibold">
+                                                                vtv24news
+                                                            </Text>
+                                                            <Icon as={AiFillCheckCircle} w={5} h={5} color="green.300" />
+                                                            <Text fontSize="2xs">VTV24 . 10-6</Text>
+                                                        </HStack>
+                                                    </Box>
+                                                    <Box className="post-cotent">
+                                                        <Text fontSize="sm">
+                                                            Thay vì gục ngã trước nghịch cảnh, Phạm Tuấn Hưng đã chọn cách dũng cảm đương đầu để được sống trọn
+                                                            với đam mê của bản thân mình #vtv24 #thethaomoingay
+                                                        </Text>
+                                                    </Box>
+                                                    <Box className="post-music">
+                                                        <Text fontSize="xs" fontWeight="semibold">
+                                                            <Icon as={BsMusicNoteBeamed} w={4} h={4} /> original sound - VTV24
+                                                        </Text>
+                                                    </Box>
+                                                </VStack>
+                                            </Box>
+                                            <Box ml={10}>
+                                                <div className="follow-button">
+                                                    <Button variant="pink-outline">Follow</Button>
+                                                </div>
+                                            </Box>
+                                        </Flex>
+                                    </Box>
+                                    <Box w="100%" className="feed__item__video"></Box>
                                 </VStack>
                             </Box>
                         </HStack>

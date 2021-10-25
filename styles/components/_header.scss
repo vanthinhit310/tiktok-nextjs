@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1801;
+    z-index: 2;
     display: flex;
     align-items: center;
     height: 65px;
@@ -34,9 +34,7 @@
             }
         }
         .search-button {
-            //background-color: $--gray--bg;
             border-radius: 0 20px 20px 0;
-            //color: $--black--text;
         }
     }
 }
