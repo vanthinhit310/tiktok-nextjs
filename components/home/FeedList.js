@@ -1,5 +1,6 @@
 import { VStack, StackDivider, Box, HStack, Flex, Avatar, Text, Icon, Button } from "@chakra-ui/react";
 import _ from "lodash";
+import ReactPlayer from "react-player/lazy";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { BsMusicNoteBeamed } from "react-icons/bs";
 
@@ -14,11 +15,11 @@ const FeedList = () => {
                                 <Avatar size="50px" name="Dan Abrahmov" src="https://bit.ly/ryan-florence" />
                             </Box>
                             <Box w="100%">
-                                <VStack>
+                                <VStack alignItems="flex-start" spacing={5}>
                                     <Box w="100%">
                                         <Flex>
                                             <Box>
-                                                <VStack alignItems="flex-start">
+                                                <VStack alignItems="flex-start" spacing={3}>
                                                     <Box>
                                                         <HStack spacing={2}>
                                                             <Text fontSize="sm" fontWeight="semibold">
@@ -48,7 +49,17 @@ const FeedList = () => {
                                             </Box>
                                         </Flex>
                                     </Box>
-                                    <Box w="100%" className="feed__item__video"></Box>
+                                    <Box className="feed__item__video">
+                                        <ReactPlayer
+                                            style={{ borderRadius: "6px", overflow: "hidden" }}
+                                            className="feed__item__player"
+                                            url="/videos/demo.mp4"
+                                            controls={true}
+                                            muted={true}
+                                            loop={true}
+                                            playing={false}
+                                        />
+                                    </Box>
                                 </VStack>
                             </Box>
                         </HStack>
